@@ -25,4 +25,4 @@ This is a simple Number Guessing Game built using JavaScript, HTML, and CSS. The
 ## How to Use
 
 1. **Clone the Repository**:
-   git clone https://github.com/Sad-without-you/number-guessing-game.git
+   https://github.com/Sad-without-you/number-guessing-game.git
