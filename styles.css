@@ -1,0 +1,105 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the Game */
+#game-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px; /* Set the width of the game */
+    max-width: 100%; /* For mobile devices */
+}
+
+/* Styling for the Label */
+label[for="guessNum"] {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: bold;
+}
+
+/* Styling for the Input Field */
+#guessNum {
+    width: 20%; 
+    padding: 15px; 
+    border-radius: 30px; 
+    border: 2px solid #fcb69f; 
+    font-size: 1.2em; 
+    margin-bottom: 20px; 
+    transition: border-color 0.3s ease;
+}
+
+#guessNum:focus {
+    border-color: #ff6f61; /* Border color on focus */
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e65c54;
+    transform: translateY(-3px);
+}
+
+button:active {
+    background-color: #d04d45;
+    transform: translateY(0);
+}
+
+/* Result Paragraph */
+#result {
+    margin-top: 20px;
+    font-size: 1.4em;
+    color: #333;
+    background-color: #ffecd2;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: block;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    #game-container {
+        width: 90%; /* Adjusts the width for smaller screens */
+        padding: 20px;
+    }
+
+    label[for="guessNum"] {
+        font-size: 1.5em;
+    }
+
+    #guessNum {
+        font-size: 1em;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 12px;
+    }
+}
